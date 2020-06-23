@@ -115,7 +115,7 @@
         &__content {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-110%);
             transition: 0.5s all;
             &_active {
                 transform: translateX(0%);
@@ -151,11 +151,17 @@
                     left: -14px;
                     top: 7px;
                 }
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                }
             }
         }
         &__back {
-            position: absolute;
-            bottom: 0;
             left: 50%;
             transform: translateX(calc(-50% - 19px));
             display: block;
